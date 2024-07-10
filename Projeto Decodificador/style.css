@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(cloudswallpaper.jpg);
+    box-sizing: border-box;
+    color: #364a58;
+}
+
+.vogal.a {
+    padding: 25px 0px 0px 17px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caixa {
+margin: 1px 1px 1px 150px;
+}
+
+.caixa__digitar {
+    resize: none;
+    width: 820px;
+    height: 600px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 32px;
+}
+
+.exclamacao {
+    display: flex;
+    padding: 50px 0px 11px 25px;
+    gap: 8px;
+}
+
+.botoes {
+    padding:0 24px 0 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.botao_criptografar {
+    color: white;
+    background-color: #0A3871;
+    text-align: center;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 328px;
+    height: 67px;
+}
+
+.botao_criptografar:hover {
+    background-color: #528cb5;
+}
+
+.botao_descriptografar {
+    color: #0A3871;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.botao_descriptografar:hover {
+    background-color: #528cb5;
+}
+
+.retangulo {
+    border-radius: 32px;
+    width: 400px;
+    height: 790px;
+    margin: 26px;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.retangulo__resposta {
+    width: 400px;
+    height: 790px;
+    margin: 26px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.retangulo__texto {
+    width: 400px;
+    height: 780px;
+    background-color: #ffffff;
+    color: #0A3871;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    outline: none;
+    resize: none;
+    border: none;
+    padding: 5px;
+}
+
+.boneco{
+    width: 80%;  
+}
+
+.mensagem {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    padding: 10px
+}
+
+.digite-aqui {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    padding: 1%;
+}
+
+.botao_copiar {
+    color: #0A3871;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 24px;
+    width: 336px;
+    height: 67px;
+    align-content: center;
+    margin: 10px 32px 32px 45px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.botao_copiar:hover {
+    background-color: #528cb5;
+}
+
+.rodape {
+    /* background-color: #FEBBCC; */
+    background-color: #C0DBEA;
+    padding: 10px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape_texto {
+    padding: 13px;
+}
+
+.links {
+    text-decoration: none;
+    padding: 7px 10px 0px 10px;
+}
+
+@media screen and (max-width: 1220px) {
+    main {
+        flex-direction: column;
+    }
+
+    .caixa {
+        flex-direction: column;
+        align-content: center;
+        margin: 3%;
+    }
+
+    .boneco {
+        width: 0px;
+        height: 0px;
+    }
+
+    .botoes, .exclamacao {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .botao_copiar {
+        flex-direction: column;
+    }
+
+    .retangulo, .retangulo__resposta, .retangulo__texto {
+        width: 100%;
+        height: 100%;
+        margin-top: 32px;
+        padding: 6px 4px 0 4px;
+    }
+}
